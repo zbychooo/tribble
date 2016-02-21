@@ -19,10 +19,12 @@ public class TribbleApp {
         u.setName("usr_name"); 
         u.setUsername("usr");
          
-        userDao.save(u);
+        //userDao.save(u);
          
-        System.out.println("Useer::"+u);
+        //System.out.println("Useer::"+u);
          
+        System.out.println("Working Directory = " + System.getProperty("user.dir"));
+        
         List<User> all = userDao.getAll();
          
         for(User i : all){
@@ -32,5 +34,4 @@ public class TribbleApp {
         context.close();    
 		
 	}
-
 }
