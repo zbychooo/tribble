@@ -19,13 +19,9 @@ public class TribbleApp {
         u.setName("usr_name"); 
         u.setUsername("usr");
          
-        //userDao.save(u);
-         
-        //System.out.println("Useer::"+u);
-         
-        System.out.println("Working Directory = " + System.getProperty("user.dir"));
+        userDao.create(u);
         
-        List<User> all = userDao.getAll();
+        List<User> all = userDao.fetchAll(User.class);
          
         for(User i : all){
             System.out.println("Person List::"+i);

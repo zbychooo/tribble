@@ -35,8 +35,19 @@
 				<prop key="hibernate.show_sql">${com.tribble.hibernate.show_sql}</prop>
 			</props>
 		</property>
-		<property name="packagesToScan" value="com.tribble"></property>
+		<property name="packagesToScan" value="com.tribble.model"></property>
 	</bean>
+
+
+    <!-- Transaction -->
+    <bean id="transactionManager"
+        class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+
+    <tx:annotation-driven transaction-manager="transactionManager" />
+
+
 
 	<bean id="userDAO" class="com.tribble.dao.impl.UserDaoImpl">
 		<property name="sessionFactory" ref="hibernateSessionFactory" />

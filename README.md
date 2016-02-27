@@ -5,5 +5,7 @@
 * MySql
 * Tomcat v8
 
-2. Installation guide
-* TO BE DEFINED
+2. Configuration Files:
+* pom.xml (maven)
+* config.properties (application)
+* config.xml (spring)

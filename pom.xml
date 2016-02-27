@@ -17,13 +17,14 @@
 		<spring-framework.version>4.2.4.RELEASE</spring-framework.version>
 		<hibernate.version>5.1.0.Final</hibernate.version>
 		<mysql.version>5.1.38</mysql.version>
+		<junit.version>4.12</junit.version>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>${junit.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>

@@ -1,5 +1,7 @@
 package com.tribble.model;
 
+import java.io.Serializable;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,11 +11,11 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "User")
-public class User {
+public class User implements Serializable {
 	
 	@Id
     @Column(name="id")
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy=GenerationType.AUTO)
 	private int id;
 	private String username;
 	private String name;

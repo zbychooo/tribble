@@ -1,16 +1,13 @@
 package com.tribble.dao.impl;
 
-import java.util.List;
-
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.Transaction;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.tribble.dao.UserDao;
-import com.tribble.model.User;
 
-public class UserDaoImpl implements UserDao {
+@Transactional
+public class UserDaoImpl extends TribbleDaoImpl implements UserDao {
 
+	/*
 	private SessionFactory sessionFactory;
 	 
     public void setSessionFactory(SessionFactory sessionFactory) {
@@ -34,5 +31,5 @@ public class UserDaoImpl implements UserDao {
 		
 		return list;
 	}
-
+	//*/
 }
