@@ -50,6 +50,5 @@
 	<bean id="persistenceExceptionTranslationPostProcessor"
 		class="org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
 
-	<bean id="AttributeDefinitionDao" class="com.tribble.dao.impl.AttributeDefinitionDaoImpl" />
-	<bean id="TypeDefinitionDao" class="com.tribble.dao.impl.TypeDefinitionDaoImpl" />
+	<bean id="TypeDefinitionDAO" class="com.tribble.dao.impl.TypeDefinitionDaoImpl" />
 </beans>

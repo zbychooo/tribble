@@ -35,10 +35,6 @@ public class TypeDefinition {
 		return id;
 	}
 
-	public void setId(Long id) {
-		this.id = id;
-	}
-
 	public String getInternalName() {
 		return internalName;
 	}
