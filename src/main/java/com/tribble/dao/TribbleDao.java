@@ -1,15 +1,13 @@
 package com.tribble.dao;
 
-import java.io.Serializable;
 import java.util.List;
 
 public interface TribbleDao {
 
-	public <T> Serializable create(final T entity);   
-    public <T> T update(final T entity);
-    public <T> void delete(final T entity);
-    public <T> void delete(Serializable id, Class<T> entityClass);
-    public <T> List<T> fetchAll(Class<T> entityClass);
-    public <T> List<T> fetchAll(String query);
-    public <T> T fetchById(Serializable id, Class<T> entityClass);
+	public <T> void create(T object);
+	public <T> void update(T object);
+	public <T> void delete(T object);
+	public <T> T fetchById(Class<T> clazz, T id);
+	public <T> List<T> fetchAll(Class<T> clazz);
+
 }
